@@ -3,53 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genera File Excel</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Seleziona Mese e Squadra</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Genera File Excel per la Squadra</h1>
-
-        <div>
-            <label for="mese">Seleziona il mese:</label>
-            <select id="mese">
-                <option value="1">Gennaio</option>
-                <option value="2">Febbraio</option>
-                <option value="3">Marzo</option>
-                <option value="4">Aprile</option>
-                <option value="5">Maggio</option>
-                <option value="6">Giugno</option>
-                <option value="7">Luglio</option>
-                <option value="8">Agosto</option>
-                <option value="9">Settembre</option>
-                <option value="10">Ottobre</option>
-                <option value="11">Novembre</option>
-                <option value="12">Dicembre</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="squadra">Seleziona la squadra:</label>
-            <select id="squadra">
-                <option value="Squadra1">Squadra 1</option>
-                <option value="Squadra2">Squadra 2</option>
-                <option value="Squadra3">Squadra 3</option>
-                <option value="Squadra4">Squadra 4</option>
-            </select>
-        </div>
-
-        <button id="generateButton" onclick="richiediFile()">Genera File</button>
-
-        <div id="messaggio"></div>
-
-        <div id="progress-container" style="display: none;">
-            <div id="progress-bar" style="width: 0%;"></div>
-            <div id="progress-text">0%</div>
-        </div>
-
-        <a id="downloadButton" href="#" style="display: none;">Download File</a>
+    <h2>Seleziona Mese e Squadra</h2>
+    
+    <!-- Selettori per mese e squadra -->
+    <label for="monthSelect">Seleziona mese:</label>
+    <select id="monthSelect">
+        <option value="1">Gennaio</option>
+        <option value="2">Febbraio</option>
+        <option value="3">Marzo</option>
+        <option value="4">Aprile</option>
+        <option value="5">Maggio</option>
+        <option value="6">Giugno</option>
+        <option value="7">Luglio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Settembre</option>
+        <option value="10">Ottobre</option>
+        <option value="11">Novembre</option>
+        <option value="12">Dicembre</option>
+    </select>
+    
+    <label for="teamSelect">Seleziona squadra:</label>
+    <select id="teamSelect">
+        <option value="team1">Squadra 1</option>
+        <option value="team2">Squadra 2</option>
+        <option value="team3">Squadra 3</option>
+        <option value="team4">Squadra 4</option>
+    </select>
+    
+    <div id="team1Sheet">
+        <h3>Foglio Squadra 1</h3>
+        <div class="a8">A8</div>
     </div>
-
+    <div id="team2Sheet">
+        <h3>Foglio Squadra 2</h3>
+        <div class="a8">A8</div>
+    </div>
+    <div id="team3Sheet">
+        <h3>Foglio Squadra 3</h3>
+        <div class="a8">A8</div>
+    </div>
+    <div id="team4Sheet">
+        <h3>Foglio Squadra 4</h3>
+        <div class="a8">A8</div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
